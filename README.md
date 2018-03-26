@@ -1,2 +1,15 @@
-# smarttimer
-A smart timer implementation
+# smart-timer
+A smart timer uses a timeout and an interval timer to check for timeout events, thereby avoiding excessive timeout checks.
+
+## usage
+
+```
+const stream = somehowGetAStream()
+
+const {create} = require('smart_timer')
+const timer = create(() => stream.destroy()), {timeout: 5000, interval: 1000})
+
+stream
+  .on('data', () => timer.touch())    // keep the timer updated of activity
+  .on('end', () => timer.destroy())   // destroy the timer when done
+```

@@ -1,0 +1,39 @@
+{
+  "name": "@anandsuresh/smart-timer",
+  "version": "1.0.0",
+  "description": "A smart timer implementation",
+  "license": "MIT",
+  "main": "lib/smart-timer.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandsuresh/smart-timer.git"
+  },
+  "author": "Anand Suresh",
+  "bugs": {
+    "url": "https://github.com/anandsuresh/smart-timer/issues"
+  },
+  "homepage": "https://github.com/anandsuresh/smart-timer#readme",
+  "scripts": {
+    "coverage": "NODE_ENV=test istanbul cover -i 'lib/**/*.js' _mocha -- --ui bdd --reporter spec --recursive spec && open coverage/lcov-report/index.html > /dev/null 2>&1",
+    "lint": "standard",
+    "test": "mocha --ui bdd --reporter spec --recursive spec"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "istanbul": "1.1.0-alpha.1",
+    "mocha": "5.0.5",
+    "sinon": "5.0.0",
+    "standard": "11.0.1"
+  },
+  "standard": {
+    "ignore": [],
+    "globals": [
+      "after",
+      "afterEach",
+      "before",
+      "beforeEach",
+      "describe",
+      "it"
+    ]
+  }
+}
