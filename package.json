@@ -1,9 +1,9 @@
 {
   "name": "@anandsuresh/smart-timer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A smart timer implementation",
   "license": "MIT",
-  "main": "lib/smart-timer.js",
+  "main": "lib/smart_timer.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/anandsuresh/smart-timer.git"
