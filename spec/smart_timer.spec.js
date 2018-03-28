@@ -27,7 +27,7 @@ describe('Timer', function () {
     it('should call onTimeout when the timeout occurs', function (done) {
       const timeout = 500
       const onTimeout = duration => {
-        expect(duration).to.be.greaterThan(timeout)
+        expect(duration).to.be.at.least(timeout)
         timer.destroy()
         done()
       }
