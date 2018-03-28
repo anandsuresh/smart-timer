@@ -1,4 +1,9 @@
+![npm (scoped)](https://img.shields.io/npm/v/@anandsuresh/smart-timer.svg?style=plastic)
+![Travis](https://img.shields.io/travis/anandsuresh/smart-timer.svg?style=plastic)
+![npm](https://img.shields.io/npm/dt/@anandsuresh/smart-timer.svg?style=plastic)
+
 # smart-timer
+
 A smart timer uses a timeout and an interval timer to check for timeout events, thereby avoiding excessive timeout checks.
 
 ## usage
